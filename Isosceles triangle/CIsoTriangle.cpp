@@ -170,7 +170,6 @@ float IsoTriangle::GetSide()
 	return side;
 }
 
-
 /// @brief computes the angles of the object
 /// @return the angles 
 void IsoTriangle::GetAngles(float h, float s)
@@ -184,13 +183,6 @@ void IsoTriangle::GetAngles(float h, float s)
 	cout << endl;
 	
 	return;
-}
-
-/// @brief computes the area of the object
-/// @return the area 
-float IsoTriangle::GetArea() 
-{	
-	return (base*height)/2;
 }
 
 
@@ -221,7 +213,6 @@ void IsoTriangle::Dump()
 	cout << "Base = " << base << endl;
 	cout << "Height = " << height << endl;
 	cout << "Oblique side = " << side << endl;
-	cout << "Area = " << GetArea() << endl;
 	GetAngles(height, side);
 
 	Triangle::Dump();

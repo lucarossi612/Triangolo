@@ -54,13 +54,12 @@ public:
 	void SetSide(float b, float h);
 	void SetDim(float b, float h);
 	
-	void GetDim(float &w, float &h, float &s);
+	void GetDim(float &b, float &h, float &s);
 	float GetHeight();
 	float GetBase();
 	float GetSide();
 	
 	void GetAngles(float h, float s);
-	float GetArea();
 	/// @}
 	
 	
