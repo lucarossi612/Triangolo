@@ -89,6 +89,13 @@ float Triangle::GetPerimeter() {
 
 } 
 
+///@brief get the area of the object using Heron's formula
+/// @return area
+float Triangle::GetArea(float* sides)
+{
+	return sqrt((GetPerimeter()/2)*((GetPerimeter()/2)-sides[0])*((GetPerimeter()/2)-sides[1])*((GetPerimeter()/2)-sides[2]));
+}
+
 /// @brief get the sides of the object 
 /// @param s0 side 0 
 /// @param s1 side 1
@@ -125,6 +132,7 @@ void Triangle::Dump() {
 	cout << endl;
 	cout << "Sides = " << sides[0] << "; " << sides[1] << "; " << sides[2] << "; " << endl;
 	cout << "Perimeter = " << GetPerimeter() << endl;
+	cout << "Area = " << GetArea(sides) << endl;
 	cout << endl;
 
 }

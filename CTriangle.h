@@ -48,6 +48,7 @@ public:
 	/// @name GETTERS
 	/// @{
 	float GetPerimeter();
+	float GetArea(float* sides);
 	void GetSides(float &s0, float &s1, float &s2);
 	/// @}
 	
